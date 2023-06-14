@@ -1,0 +1,316 @@
+html, body{
+    font-family: sans-serif;
+
+}
+
+
+/*navigation*/
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 2%;
+}
+
+.navburgure{
+    font-size: 2em;
+    color: #717171;
+}
+
+.navliens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.navliensHome{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    color: black;
+    border-bottom: 2px solid #000;
+}
+.navliensProduits{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    color: black;
+    border-bottom: 2px solid #000;
+}
+
+.navliensContact{
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: black;
+    border-bottom: 2px solid #000;
+}
+
+
+
+/*header*/
+
+.header{
+    background-image: url("../Images/windows.jpg");
+    background-size: cover;
+    padding: 120px;
+    border-top:5px solid #717171;
+    background-position: center;
+
+}
+
+.headerEcrit{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.headerliens{
+    border-bottom: solid #fff;
+    text-decoration: none;
+    color: white;
+}
+
+.headerButton{
+    padding-top: 50px;
+}
+
+.button{
+    font-size: 1em;
+    padding: 15px 40px 15px 40px;
+    border-radius: 16px;
+}
+
+/*partie section*/
+
+
+/*la div de Valeurs*/
+.main{
+    margin: 3% 15% 3% 15%;
+
+}
+.mainValeurs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 450px;
+
+}
+
+.mainValeursText{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 20px 0 20px;
+    font-size: 1.4em;
+    width: 50%;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+}
+.mainValeursImages{
+
+    width: 50%;
+
+}
+
+
+
+.mainOeuvres{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 450px;
+
+}
+
+.mainOeuvresText{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 20px 0 20px;
+    font-size: 1.4em;
+    width: 50%;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+}
+.mainOeuvresImages{
+
+    width: 50%;
+}
+.img{
+    border-radius: 0 20px 20px 0;
+}
+
+
+/*section du footer*/
+
+.piedPages{
+    width: 95%;
+    background-color: black;
+    color: #fff;
+    border-top:5px solid #717171;
+    padding: 3% 2% 3% 3%;
+}
+
+
+.piedPagesTitre{
+
+    border-bottom:2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.piedPagesInfos{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.piedPagesLivraisonPaiement{
+    display: flex;
+    flex-direction: row;
+    margin-right: -40%;
+   
+}
+
+.piedPagesLivraison{
+    text-align: justify;
+    width: 30%;
+}
+.piedPagesPaiement{
+    text-align: justify;
+    width: 30%;
+    margin-left: 7%;
+}
+.piedPagesForum{
+
+    padding-right: 30px;
+    text-align: start;
+    width: 30%;
+    margin-left: 7%;
+}
+
+.piedPagesContact{
+    color: blueviolet;
+}
+
+/*parti des media queries*/
+
+@media screen and (max-width: 1405px){
+
+    .piedPagesInfos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .piedPagesLivraisonPaiement{
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .piedPagesForum{
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1005px){
+
+    .piedPagesLivraisonPaiement{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: -4px;
+       
+    }
+
+    .piedPagesLivraison{
+        text-align: justify;
+        width: 40%;
+        margin-left: 7%;
+    }
+    .piedPagesPaiement{
+        text-align: justify;
+        width: 40%;
+        margin-left: 7%;
+    }
+    .piedPagesForum{
+        text-align: justify;
+        width: 40%;
+        margin-left: 10%;
+        width: 56%;
+    }
+}
+
+@media screen and (max-width: 773px){
+
+
+    .main{
+        margin: 30% 0 30% 0;
+    
+    }
+
+    .mainValeurs{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40%;
+
+    
+    }
+
+    .mainValeursText{
+
+        padding: 8px;
+        font-size: 1.4em;
+        width: 100%;
+        border-radius: 0px;
+
+    }
+    .mainValeursImages{
+    
+        width: 100%;
+    
+    }
+    .mainTextValeurs{
+        text-align: left;
+    }
+
+
+    .mainTextParagraph{
+        text-align: justify;
+    }
+    
+    
+
+
+
+
+    .mainOeuvres{
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+
+    .mainOeuvresText{
+        padding: 8px;
+        width: 100%;
+        border-radius: 0px;
+        text-align: center;
+    }
+    .mainOeuvresImages{
+    
+        width: 100%;
+    }
+    .mainTextOeuvres{
+    
+        text-align: left;
+    }
+
+    .img{
+        border-radius: 0;
+        width: 102%;
+    }
+}
